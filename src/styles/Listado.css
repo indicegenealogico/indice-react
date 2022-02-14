@@ -1,0 +1,132 @@
+.myColumns {
+  -webkit-column-gap: 10px !important;
+  -moz-column-gap: 10px !important;
+  column-gap: 10px !important;
+}
+#turn {
+  padding: 10px 30px 30px;
+}
+.container-letters {
+  padding-bottom: 15px;
+  min-height: 25vh;
+}
+.filterDiv {
+  /*float: left;*/
+  /*background-color: #2196F3;*/
+  color: #000000;
+  /*width: 100px;*/
+  /*line-height: 100px;*/
+  /*text-align: center;*/
+  margin: 2px;
+  display: none; /*Hidden by default*/
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.filterDiv:hover {
+  background-color: #ddd;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.container-letters {
+  overflow: hidden;
+}
+ul,
+ol {
+  padding-inline-start: 10px;
+  font-family: "Georgia", serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .myColumns {
+    -webkit-column-count: 4 !important;
+    -moz-column-count: 4 !important;
+    column-count: 4 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .myColumns {
+    -webkit-column-count: 5 !important;
+    -moz-column-count: 5 !important;
+    column-count: 5 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .myColumns {
+    -webkit-column-count: 6 !important;
+    -moz-column-count: 6 !important;
+    column-count: 6 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .myColumns {
+    -webkit-column-gap: 10px !important;
+    -moz-column-gap: 10px !important;
+    column-gap: 10px !important;
+    -webkit-column-count: 8 !important;
+    -moz-column-count: 8 !important;
+    column-count: 8 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+    -webkit-column-rule: 1px solid #666;
+    -moz-column-rule: 1px solid #666;
+    column-rule: 1px solid #666;
+  }
+}
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation: landscape) {
+  #turn {
+    display: none;
+  }
+  .container-fluid {
+    display: block;
+  }
+}
+
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation: portrait) {
+  .container-fluid {
+    display: none;
+  }
+  #turn {
+    display: block;
+  }
+}

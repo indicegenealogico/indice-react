@@ -1,0 +1,17 @@
+.jumbotron {
+  overflow: hidden;
+  position: relative;
+}
+
+.jumbo-bg {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.jumbo {
+  position: relative;
+}
